@@ -1,0 +1,25 @@
+리포지토리에 이미 폴더나 파일이 올라가 있으면 무시가 안됨.
+이미 올라가 있다면 커밋할 때 지우고 무시후 다음 커밋 적용
+
+.gitignore
+
+- 폴더 형상 관리 무시
+
+폴더이름/
+폴더이름
+
+폴더 내 폴더 무시
+예) app/build
+
+- 파일 형상 관리 무시
+파일명(확장자 같이 포함)
+예) AppTest.java
+test/java/aaa/AppTest.java
+
+- 특정 확장자 모두 무시
+*.확장자
+예)*.properties
+
+- *활용한 무시
+예) test/java/*/AppTest.java
+예) test/java/**/AppTest.java (java에서부터 어떠한 경로가 되던 AppTest.java를 무시)
